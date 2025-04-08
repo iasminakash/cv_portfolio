@@ -1,0 +1,98 @@
+.home {
+  background-color:rgb(88, 182, 193);
+}
+
+.about {
+  background-color: rgb(238, 195, 23);
+}
+
+.skills {
+background-color: rgb(141, 165, 75);
+}
+
+.resume {
+  background-color: rgb(197, 133, 201);
+}
+
+.projects {
+  background-color: rgb(112, 106, 224);
+}
+
+.contact {
+  background-color: rgb(224, 91, 182);
+}
+/* NAVIGATION BAR */
+.navigation-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  height: 3rem;
+  list-style: none;
+  align-items: center;
+  
+}
+
+.navigation-link {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color:antiquewhite;
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+
+.navigation-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: rgb(102, 98, 98);
+}
+
+.greeting-and-name{
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: antiquewhite;
+}
+
+.introduction-text{
+  font-family: 'Barrio', cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(102, 98, 98);
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+button {
+  border: none;
+
+}
+
+.svg {
+width: 3rem;
+height: 3rem;
+}
+
+.svg:hover {
+  transform: scale(1.5);
+  cursor:grab;
+}
+
+
+
+
