@@ -1,28 +1,12 @@
-/*HOME PAGE CSS, FOOTER AND NAV BAR FOR ALL MTML FILES*/
-.home {
-  background-color: rgb(88, 182, 193);
-}
+/* Section Backgrounds */
+.home { background-color: rgb(88, 182, 193); }
+.about { background-color: rgb(238, 195, 23); }
+.skills { background-color: rgb(141, 165, 75); }
+.resume { background-color: rgb(197, 133, 201); }
+.projects { background-color: rgb(112, 106, 224); }
+.contact { background-color: rgb(224, 91, 182); }
 
-.about {
-  background-color: rgb(238, 195, 23);
-}
-
-.skills {
-  background-color: rgb(141, 165, 75);
-}
-
-.resume {
-  background-color: rgb(197, 133, 201);
-}
-
-.projects {
-  background-color: rgb(112, 106, 224);
-}
-
-.contact {
-  background-color: rgb(224, 91, 182);
-}
-
+/* Navigation Bar */
 .navigation-list {
   padding: 0;
   margin: 0;
@@ -48,28 +32,28 @@
   color: rgb(102, 98, 98);
 }
 
+/* Greeting and Intro Text */
 .greeting-and-name {
   text-align: center;
   padding-top: 15%;
   margin-bottom: 0;
-  padding-bottom: 0;
   font-size: 5rem;
   text-transform: uppercase;
   color: antiquewhite;
 }
 
 .introduction-text {
-  font-family: "Barrio", cursive;
+  font-family: "Teko", sans-serif;
+  line-height: 0.7;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
   color: rgb(102, 98, 98);
   margin-top: 0;
-  padding-top: 0;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding: 0 20%;
 }
 
+/* Footer */
 .footer {
   position: fixed;
   bottom: 0;
@@ -87,11 +71,6 @@ button {
   padding: 0;
 }
 
-.navigation-link {
-  padding: 0;
-  margin: 0;
-}
-
 .svg {
   width: 3rem;
   height: 3rem;
@@ -102,14 +81,15 @@ button {
   cursor: grab;
 }
 
+/* Media Queries */
 @media (max-width: 845px) {
-  .greeting-and-name {
-    padding-top: 10%;
-  }
+  .greeting-and-name { padding-top: 10%; }
+  
   .navigation-list {
     display: flex;
     justify-content: center;
   }
+
   .navigation-link {
     font-size: 1.5rem;
     margin-right: 0;
@@ -117,26 +97,8 @@ button {
 }
 
 @media (max-width: 390px) {
-  .navigation-link {
-    font-size: 1rem;
-    margin-right: 0;
-  }
-
-  main {
-    padding-top: 20%;
-  }
-
-  .greeting-and-name {
-    font-size: 3rem;
-  }
-
-  .introduction-text {
-    font-size: 1.5rem;
-  }
-
-  .introduction-text {
-    font-size: 1.5rem;
-    padding-bottom: 10rem;
-    margin-bottom: 10rem;
-  }
+  .navigation-link { font-size: 1rem; margin-right: 0; }
+  main { padding-top: 20%; }
+  .greeting-and-name { font-size: 3rem; }
+  .introduction-text { font-size: 1.5rem; padding-bottom: 10rem; margin-bottom: 10rem; }
 }
