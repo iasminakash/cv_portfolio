@@ -1,38 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iasmina Alkashash</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>
-</head>
-<body class="projects">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="projects">
     <header>
-        <nav class="navigation-bar">
-          <ul class="navigation-list">
-            <li><a href="/home.html" class="navigation-link">Home/</a></li>
-            <li><a href="/about.html" class="navigation-link">About/</a></li>
-            <li><a href="/skills.html" class="navigation-link">Skills/</a></li>
-            <li><a href="/resume.html" class="navigation-link">Resume/</a></li>
-            <li><a href="/projects.html" class="navigation-link">Projects/</a></li>
-            <li><a href="/contact.html" class="navigation-link">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-        
-      <footer class="footer projects">
-        <a href="https://www.linkedin.com/in/iasmina-alkashash/" target="_blank">
-        <button class="projects"><img src="images/mdi--linkedin (1).svg" class="svg" alt="LinkedIn profile link" /></button> </a>
-        <a href="https://github.com/iasminakash"target="_blank">
-        <button class="projects"><img src="images/mdi--github.svg" class="svg" alt="GitHub repository link" /></button> </a>
-        <a href="/contact.html" class="navigation-link"target="_self">
-        <button class="projects"><img src="images/material-symbols--mail-rounded.svg" class="svg" alt="Contact me via e-mail" ></button></a>
-        <button class="projects"><img src="images/ep--turn-off (7).svg" class="svg" alt="Change the light mode" ></button>
-        <button class="projects hide-footer-button"><img src="images/material-symbols--hide-rounded (1).svg" class="svg" alt="Hide the footer" ></button>
-      </footer>
-    
-</body>
+      <nav class="navigation-bar">
+        <ul class="navigation-list">
+          <li><a href="/home.html" class="navigation-link">Home/</a></li>
+          <li><a href="/about.html" class="navigation-link">About/</a></li>
+          <li><a href="/skills.html" class="navigation-link">Skills/</a></li>
+          <li><a href="/resume.html" class="navigation-link">Resume/</a></li>
+          <li>
+            <a href="/projects.html" class="navigation-link">Projects/</a>
+          </li>
+          <li><a href="/contact.html" class="navigation-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="project-contribution-graph">
+      <div>
+      <img
+        class="project-contribution-graph-svg"
+        src="images/download.svg"
+        alt="GitHub Contribution Graph"/>
+      </div>
+      <div class="card-section">
+        <div class="card">
+          <img class="card-image" src="images/plantswap.jpg">
+          <div class="category">Plantswap REST API</div>
+          <div class="heading">The PlantSwap REST API is a backend service designed to power a plant exchange platform where users can list, browse, and request plant trades. Built with Spring Boot and MongoDB, this API supports core functionalities like user authentication, plant listing management, and trade request handling. It follows RESTful principles to provide a clean, scalable, and efficient architecture.</div>
+        </div>
+      
+        <div class="card">
+          <img class="card-image" src="images/porffolio.jpg">
+          <div class="category">CV portfolio website</div>
+          <div class="heading">A responsive and interactive portfolio website built using HTML, CSS, and JavaScript to showcase my projects, skills, and experience. Designed with a clean and modern aesthetic, the site includes smooth transitions, a project carousel, and a dynamic layout that adapts seamlessly across devices. It serves as a digital resume and creative space to present my development work and design style.</div>
+        </div>
+      
+        <div class="card">
+          <img class="card-image" src="images/salarytracker.jpg">
+          <div class="category">Salary tracker</div>
+          <div class="heading">The Salary Tracker is a basic Java assignment designed to reinforce foundational programming skills. The application allows users to input and manage their monthly salary records through a simple console interface. It demonstrates core Java concepts such as variables, conditionals, loops, methods, and basic object-oriented programming (OOP).</div>
+        </div>
+      
+        <div class="card">
+          <img class="card-image" src="images/transaction-tracker.jpg">
+          <div class="category">Trascation tracker</div>
+          <div class="heading">The Transaction Tracker is a Java console application designed for students to practice basic programming concepts by tracking financial transactions. The program allows users to input transactions (both income and expenses) and keeps a running total of the balance. The application calculates and displays a summary, including the total income, total expenses, and current balance.</div>
+        </div>
+      </div>
+    <footer class="footer projects">
+      <a href="https://www.linkedin.com/in/iasmina-alkashash/" target="_blank">
+        <button class="projects">
+          <img
+            src="images/mdi--linkedin (1).svg"
+            class="svg"
+            alt="LinkedIn profile link"
+          />
+        </button>
+      </a>
+      <a href="https://github.com/iasminakash" target="_blank">
+        <button class="projects">
+          <img
+            src="images/mdi--github.svg"
+            class="svg"
+            alt="GitHub repository link"
+          />
+        </button>
+      </a>
+      <a href="/contact.html" class="navigation-link" target="_self">
+        <button class="projects">
+          <img
+            src="images/material-symbols--mail-rounded.svg"
+            class="svg"
+            alt="Contact me via e-mail"
+          /></button
+      ></a>
+      <button class="projects change-light-mode">
+        <img
+          src="images/ep--turn-off (7).svg"
+          class="svg"
+          alt="Change the light mode"
+        />
+      </button>
+      <button class="projects hide-footer-button">
+        <img
+          src="images/material-symbols--hide-rounded (1).svg"
+          class="svg"
+          alt="Hide the footer"
+        />
+      </button>
+    </footer>
+  </body>
 </html>

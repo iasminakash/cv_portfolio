@@ -23,16 +23,21 @@
               </ul>
             </nav>
           </header>
-          <main>
+          <main class="contact-form">
             <section>
-                <form action="/action_page.php">
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <input type="submit" value="Submit">
-                  </form>   
-            </section>
+              <form action="/action_page.php" method="post">
+                <label for="contanter-name">Name</label><br>
+                <input type="text" id="contacter-name" name="contacter-name" required><br>
+            
+                <label for="e-mail">E-mail</label><br>
+                <input type="email" id="e-mail" name="e-mail" required><br>
+              
+                <label for="message">Your message</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+              
+                <input type="submit" value="Send">
+              </form>
+              
           </main>
         
           <footer class="footer contact">
@@ -42,7 +47,7 @@
             <button class="contact"><img src="images/mdi--github.svg" class="svg" alt="GitHub repository link" /></button> </a>
             <a href="/contact.html" class="navigation-link"target="_self">
             <button class="contact"><img src="images/material-symbols--mail-rounded.svg" class="svg" alt="Contact me via e-mail" /></button></a>
-            <button class="contact"><img src="images/ep--turn-off (7).svg" class="svg" alt="Change the light mode" /></button>
+            <button class="contact change-light-mode"><img src="images/ep--turn-off (7).svg" class="svg" alt="Change the light mode" /></button>
             <button class="contact hide-footer-button"><img src="images/material-symbols--hide-rounded (1).svg" class="svg" alt="Hide the footer" /></button>
           </footer>
         
