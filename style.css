@@ -146,6 +146,7 @@ footer a {
   width: 5rem;
   height: 5rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .skill-svg p {
@@ -220,7 +221,7 @@ footer a {
 
 .card {
   width: 20rem;
-  background: rgb(211, 204, 226);
+  background: antiquewhite;
   opacity: 0.5;
   padding: 0.4em;
   border-radius: 6px;
@@ -241,7 +242,6 @@ footer a {
 .category,
 .heading,
 .name {
-  text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
 }
 
