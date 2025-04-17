@@ -1,7 +1,6 @@
 /* ALL PAGES STYLING */
 body {
-  margin-right: 2%;
-  margin-left: 2%;
+  margin: 0;
 }
 
 main {
@@ -15,12 +14,24 @@ button,
   margin: 0;
 }
 
-.home    { background-color: rgb(88, 182, 193); }
-.about   { background-color: rgb(238, 195, 23); }
-.skills  { background-color: rgb(141, 165, 75); }
-.resume  { background-color: rgb(197, 133, 201); }
-.projects{ background-color: rgb(112, 106, 224); }
-.contact { background-color: rgb(224, 91, 182); }
+.home {
+  background-color: rgb(88, 182, 193);
+}
+.about {
+  background-color: rgb(238, 195, 23);
+}
+.skills {
+  background-color: rgb(141, 165, 75);
+}
+.resume {
+  background-color: rgb(197, 133, 201);
+}
+.projects {
+  background-color: rgb(112, 106, 224);
+}
+.contact {
+  background-color: rgb(224, 91, 182);
+}
 
 /* NAVIGATION BAR */
 .navigation-list {
@@ -69,7 +80,7 @@ button,
   padding: 0 20%;
 }
 
-/* FOOTER */
+/* FOOTER NAVIGATION BAR*/
 footer {
   position: fixed;
   bottom: 0;
@@ -257,7 +268,6 @@ footer a {
   transition: filter 0.3s ease;
 }
 
-
 /* CONTACT */
 main.contact-form {
   display: flex;
@@ -314,18 +324,19 @@ input[type="submit"]:hover {
 }
 
 /* ABOUT */
+
 .slideshow {
   display: block;
   justify-content: center;
   max-width: 90%;
   max-height: 90%;
   overflow: hidden;
-  margin: 0 2% 0 4%;
+  margin: 0 4% 0 4%;
 }
 
 .slides {
   display: flex;
-  animation: slide 15s infinite;
+  animation: slide 30s infinite;
 }
 
 .slide {
@@ -341,23 +352,43 @@ input[type="submit"]:hover {
   width: 100%;
   max-width: 80%;
   height: auto;
-  border: none;
-  box-shadow: none;
+  border-style: hidden;
 }
 
 .slide p {
-  color: rgb(101, 95, 95);
+  color: antiquewhite;
   font-weight: bold;
   font-size: 1.5rem;
-  font-style: italic;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.headline {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-family: "Teko", sans-serif;
 }
 
 @keyframes slide {
-  0%, 20%   { transform: translateX(0%); }
-  25%, 45%  { transform: translateX(-100%); }
-  50%, 70%  { transform: translateX(-200%); }
-  75%, 95%  { transform: translateX(-300%); }
-  100%      { transform: translateX(-400%); }
+  0%,
+  20% {
+    transform: translateX(0%);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
 }
 
 /* MEDIA QUARIES */
